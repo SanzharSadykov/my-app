@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <div>
+        <div>
             <h1 v-if="status === 1">{{ heading }}</h1>
             <p v-else>{{ roma }}</p>
             <button @click="toggleSwitch()">Click me!</button>
@@ -9,8 +9,10 @@
             <p>{{ item.id }}</p>
             <h1>{{ item.nickname }}</h1>
             <small>{{ item.name }}</small>
-        </div> -->
-        <div class="flex flex-wrap justify-center items-center">
+        </div>
+        <input type="text" v-model="inp">
+        <p>{{ inp }}</p>
+        <!-- <div class="flex flex-wrap justify-center items-center">
             <div class="block w-1/3 p-4">
                 <div class="flex justify-start items-center">
                     <div class="block p-2">
@@ -24,7 +26,6 @@
                 <div>
                     <img class="mx-auto" src="@/assets/img/whiteboard-horizontal.svg" alt="">
                     <p class="w-1/2 mx-auto text-center py-4 text-gray-600 text-xl">Доступ в один клик к видеозвонкам, приложениям и календарям.</p>
-                    <!-- <a class="mx-auto text-white text-center rounded-xl font-bold bg-green-600 px-12 py-2">Подробнее</a> -->
                 </div>
             </div>
             <div class="block w-1/3 p-4">
@@ -35,7 +36,7 @@
                 <div><img class="w-1/2 mx-auto" src="@/assets/img/cleverstore-logo-2.svg" alt=""></div>
                 <p class="w-1/2 mx-auto text-center py-4 text-gray-600 text-xl">Более 100 бесплатных приложений на любые темы для всех возрастных групп на разных языках. От обучения до игр – у нас найдётся подходящее приложение!</p>
             </div>                      
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -46,6 +47,7 @@ export default {
         return{
             heading: "Hello, Vue!",
             status: 0,
+            inp: '',
             arr: [
                 {
                     'id': 1,

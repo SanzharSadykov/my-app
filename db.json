@@ -1,0 +1,23 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "ШАН-ЧИ \"ЛЕГЕНДА ДЕСЯТИ КОЛЕЦ\"",
+            "desc": "Гонконгский боевик плюс драма: блокбастер про нового супергероя Marvel теперь в подписке на Кинопоиске",
+            "cast": "Симу Лю, Тони Люн Чу Вай, Аквафина",
+            "director": "Дестин Дэниел Креттон",
+            "img": "https://avatars.mds.yandex.net/get-bunker/128809/f7e8bc8f72cbd418e356445fa88e86f97ad2721f/800x124",
+            "video": "https://www.youtube.com/embed/fYEXdCCpfVQ?list=RDfYEXdCCpfVQ"
+        },
+        {
+            "id": 2,
+            "title": "ШАН-ЧИ \"ЛЕГЕНДА ДЕСЯТИ КОЛЕЦ\"",
+            "desc": "Гонконгский боевик плюс драма: блокбастер про нового супергероя Marvel теперь в подписке на Кинопоиске",
+            "cast": "Симу Лю, Тони Люн Чу Вай, Аквафина",
+            "director": "Дестин Дэниел Креттон",
+            "img": "https://avatars.mds.yandex.net/get-bunker/128809/f7e8bc8f72cbd418e356445fa88e86f97ad2721f/800x124",
+            "video": "https://widgets.kinopoisk.ru/discovery/trailer/180241?noAd=1&embedId=94631716-1b6e-4ee0-a1d2-c1763a222c99&hidden=*&muted=1&loop=1&autoplay=1&from=&extraTrailers=&onlyPlayer=1"
+        }        
+    ]
+
+  }
