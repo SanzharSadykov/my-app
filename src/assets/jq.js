@@ -252,4 +252,91 @@ $( document ).ready(function() {
     //     alert(Inps); 
     // });
 
+    var field = [
+        '', '', '',
+        '', '', '',
+        '', '', ''
+    ];
+    var x = 'X';
+    var o = 'O';
+    var setNumber = null;
+    var strTurn = '';
+    var turn = Math.floor(Math.random() * 2);
+
+    if (turn === 0) {
+        strTurn = "Player 1 - Turn: " + x;
+        $('.turn').html(strTurn);           
+    } else {
+        strTurn = "Player 2 - Turn: " + o;
+        $('.turn').html(strTurn);
+    }
+
+    $('.slot').each(function(index, value) {
+        // if ($(this))
+        // console.log(index);
+        $('.slot').on('click', function() {
+            if($(this).text() != x && $(this).text() != o) {
+                if (turn === 0) {
+                    $(this).html(x);
+                    turn = 1;
+                    strTurn = "Player 2 - Turn: " + o;
+                    $('.turn').html(strTurn);  
+                    field[index] = x;
+                    console.log(field);   
+                } else {
+                    $(this).html(o);
+                    turn = 0;
+                    strTurn = "Player 1 - Turn: " + x;
+                    $('.turn').html(strTurn); 
+                    field[index] = o;    
+                    console.log(field);                  
+                }
+            } else {
+               console.log("Occupied"); 
+            }
+            $.each(field, function(index, value) {
+                if (field[0] === x && field[1] === x && field[2] === x) {
+                    console.log("Player 1 won!");
+                } else if (field[3] === x && field[4] === x && field[5] === x) {
+                    console.log("Player 1 won!");
+                } else if (field[6] === x && field[7] === x && field[8] === x) {
+                    console.log("Player 1 won!");
+                } else if (field[0] === x && field[3] === x && field[6] === x) {
+                    console.log("Player 1 won!");
+                } else if (field[1] === x && field[4] === x && field[7] === x) {
+                    console.log("Player 1 won!");
+                } else if (field[2] === x && field[5] === x && field[0] === x) {
+                    console.log("Player 1 won!");
+                } else if (field[0] === x && field[4] === x && field[8] === x) {
+                    console.log("Player 1 won!");
+                } else if (field[2] === x && field[4] === x && field[6] === x) {    
+                    console.log("Player 1 won!");
+                } else if (field[0] === o && field[1] === o && field[2] === o) {
+                    console.log("Player 2 won!");
+                } else if (field[3] === o && field[4] === o && field[5] === o) {
+                    console.log("Player 2 won!");
+                } else if (field[6] === o && field[7] === o && field[8] === o) {
+                    console.log("Player 2 won!");
+                } else if (field[0] === o && field[3] === o && field[6] === o) {
+                    console.log("Player 2 won!");
+                } else if (field[1] === o && field[4] === o && field[7] === o) {
+                    console.log("Player 2 won!");
+                } else if (field[2] === o && field[5] === o && field[0] === o) {
+                    console.log("Player 2 won!");
+                } else if (field[0] === o && field[4] === o && field[8] === o) {
+                    console.log("Player 2 won!");
+                } else if (field[2] === o && field[4] === o && field[6] === o) {    
+                    console.log("Player 2 won!");
+                } else {
+                    if (field[0] != '' && field[1] != '' && field[2] != '' && field[3] != '' && field[4] != '' && field[5] != '' && field[6] != '' && field[7] != '' && field[8] != '') {
+                        console.log("It's a draw!");
+                    }  
+                }
+            });           
+        });        
+
+        // field[$('.slot').attr("id")] = x;
+
+    });
+
 });

@@ -4,7 +4,8 @@
     <!-- <mainB/> -->
     <!-- <atCinema/> -->
     <!-- <controlWork/> -->
-    <forma/>
+    <!-- <forma/> -->
+    <tictac/>
   </div>
 </template>
 
@@ -13,7 +14,8 @@
 // import mainB from '@/components/Home/mainBlock.vue'
 // import atCinema from '@/components/Home/atCinema.vue'
 // import controlWork from '@/components/ControlTest.vue'
-import forma from '@/components/Form.vue'
+// import forma from '@/components/Form.vue'
+import tictac from '@/components/Home/TicTacToe.vue'
 
 export default {
   name: 'Home',
@@ -22,7 +24,8 @@ export default {
     // mainB,
     // atCinema,
     // controlWork,
-    forma,
+    // forma,
+    tictac
   },
     // data() {
     //     return{

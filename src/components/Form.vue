@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto w-full">
-        <form action="">
+        <!-- <form action="">
             <h1 class="ml-4 text-2xl text-black font-bold">Регистрация</h1>
             <div class="my-5">
                 <p class="ml-4 text-xl text-black font-bold">Имя</p>
@@ -25,7 +25,14 @@
             <div>
                 <input @click="submitUser()" class="border-2 border-green-600 bg-green-600 rounded-2xl w-1/2 px-4 py-2 text-xl text-white font-bold" type="submit" value="Зарегистрироваться">
             </div>
-        </form>
+        </form> -->
+        <form action="">
+        <input v-model="form.name" class="block border border-black my-2" type="text" placeholder="Enter name..">
+        <input v-model="form.email" class="block border border-black my-2" type="email" placeholder="Enter email..">
+        <input v-model="form.phone" class="block border border-black my-2" type="number" placeholder="Enter phone..">
+        <input v-model="form.pass" class="block border border-black my-2" type="password" placeholder="Enter pass..">
+        <p @click="submitUser()">Submit</p>
+        </form>        
         <div v-for="user in users" :key="user.id">
             <p>{{ user.name }}</p>
             <p>{{ user.mail }}</p>
